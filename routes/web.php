@@ -14,3 +14,8 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+/*
+ * route for BooksController "GET /books"
+ */
+$router->get('/books', 'BooksController@index');
